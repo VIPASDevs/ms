@@ -25,4 +25,4 @@ command_not_found_handle() {
 	return 127
 }
 
-trap 'echo "Fine..."' INT
+trap 'echo "Fine... Meany"' INT
