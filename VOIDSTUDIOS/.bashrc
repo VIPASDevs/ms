@@ -35,3 +35,4 @@ messages=(
 )
 printf "%s\n" "${messages[RANDOM % ${#messages[@]}]}"
 ' INT
+#each has effectively 20% chance.
