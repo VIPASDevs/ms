@@ -25,4 +25,12 @@ command_not_found_handle() {
 	return 127
 }
 
-trap 'echo "Fine... Meany"' INT
+trap '
+messages=(
+    "Fine... Meany."
+    "Mphf..."
+    "Changed your mind?"
+    "Back to the prompt!"
+)
+printf "%s\n" "${messages[RANDOM % ${#messages[@]}]}"
+' INT
