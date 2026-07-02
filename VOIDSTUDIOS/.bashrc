@@ -24,3 +24,5 @@ command_not_found_handle() {
 	printf 'That is either not a command, not installed, or not configured, dummy!\n' >&2
 	return 127
 }
+
+trap 'echo "Fine..."' INT
