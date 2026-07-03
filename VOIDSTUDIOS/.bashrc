@@ -5,9 +5,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1 = '[\u -- \W] -¥ '
-PS2 = '[continue_command] -₩ '
-PS3 = '[select] -$ '
+PS1='[\u -- \W] -¥ '
+PS2='[continue_command] -₩ '
+PS3='[select] -$ '
 #PS1 is primary prompt.
 #PS2 is prompt for when you do not finish a command
 #PS3 is a selection prompt.
