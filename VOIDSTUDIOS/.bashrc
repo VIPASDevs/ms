@@ -5,7 +5,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h -- \W] '
+PS1 = '[\u -- \W] -¥ '
+PS2 = '[continue_command] -₩ '
+PS3 = '[select] -$ '
+#PS1 is primary prompt.
+#PS2 is prompt for when you do not finish a command
+#PS3 is a selection prompt.
 
 alias rip-mp4='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4"'
 alias rip-mp3='yt-dlp -x --audio-format mp3'
