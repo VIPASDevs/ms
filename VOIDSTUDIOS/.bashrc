@@ -36,7 +36,7 @@ messages=(
     "Mphf..."
     "Changed your mind?"
     "Back to the prompt!"
-    "I didn't want to run it anyway."
+    "I did not want to run it anyway."
 )
 printf "%s\n" "${messages[RANDOM % ${#messages[@]}]}"
 ' INT
