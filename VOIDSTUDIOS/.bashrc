@@ -25,10 +25,10 @@ ldu() {
 
 lsc() {
     cd ~/CODE/PASCAL/PROGRAMS/LSC || return
-    fpc main.pas
+    fpc v3.pas
     clear
-    ./main
-    rm main.o main ad.o ad.ppu di.o di.ppu pow.o pow.ppu subs.o subs.ppu tim.o tim.ppu || return
+    ./v3
+    rm v3.o v3 ad.o ad.ppu di.o di.ppu pow.o pow.ppu subs.o subs.ppu tim.o tim.ppu || return
     clear
     cd
 }
