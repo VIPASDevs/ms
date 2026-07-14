@@ -23,6 +23,16 @@ ldu() {
     cd
 }
 
+lsc() {
+    cd ~/CODE/PASCAL/PROGRAMS/LSC || return
+    fpc main.pas
+    clear
+    ./main
+    rm main.o main ad.o ad.ppu di.o di.ppu pow.o pow.ppu subs.o subs.ppu tim.o tim.ppu || return
+    clear
+    cd
+}
+
 echo 'Copyright Void Studios Source Program 202X'
 
 command_not_found_handle() {
