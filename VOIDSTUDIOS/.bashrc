@@ -33,6 +33,17 @@ lsc() {
     cd
 }
 
+yen() {
+	cd CODE/JAVA/PROGRAMS/YEN-CON || return
+ 	javac v3.java
+ 	clear
+	java v3
+ 	rm v3.class
+	clear
+	cd
+}
+
+
 echo 'Copyright Void Studios Source Program 202X'
 
 command_not_found_handle() {
