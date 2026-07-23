@@ -1,6 +1,13 @@
-#
-# ~/.bashrc
-#
+#If you use my executables in the /usr/bin or related,
+#clean out the "ldu" function or "lsc" function or whatever you use for it.
+
+#to put one in the bin, simply move or copy the executable [LSI for this example] to the /usr/bin (for global, recommended for
+#solo-user only)
+
+#the command:
+#   sudo mv LSI /usr/bin
+
+
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
