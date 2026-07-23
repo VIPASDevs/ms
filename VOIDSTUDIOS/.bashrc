@@ -1,3 +1,6 @@
+#THIS DOES NOT WORK "OUT-OF-BOX"
+#MANY RELY ON SPECIFIC SET-UP OR TWEAKING TO YOUR MACHINE (FILE-PATHS, ETC)
+
 #If you use my executables in the /usr/bin or related,
 #clean out the "ldu" function or "lsc" function or whatever you use for it.
 
@@ -40,7 +43,7 @@ lsc() {
     cd
 }
 
-yen() {
+conv() {
 	cd CODE/JAVA/PROGRAMS/YEN-CON || return
  	javac v3.java
  	clear
@@ -50,22 +53,7 @@ yen() {
 	cd
 }
 
-
-echo 'Copyright Void Studios Source Program 202X'
-
 command_not_found_handle() {
 	printf 'That is either not a command, not installed, or not configured, dummy!\n' >&2
 	return 127
 }
-
-trap '
-messages=(
-    "Fine... Meany."
-    "Mphf..."
-    "Changed your mind?"
-    "Back to the prompt!"
-    "I did not want to run it anyway."
-)
-printf "%s\n" "${messages[RANDOM % ${#messages[@]}]}"
-' INT
-#each has effectively 20% chance.
