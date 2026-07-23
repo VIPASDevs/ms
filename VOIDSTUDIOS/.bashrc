@@ -43,15 +43,16 @@ lsc() {
     cd
 }
 
-lsi() {
-	cd ~CODE/CPP/PROGRAMS/LSI || return
-	g++ v1.cpp -o v1
-	clear
-	./v1
-	rm v1 || return
-	clear
-	cd
-}
+#UNCOMMENT THE LSI FUNCTION IF NOT USING A BIN, I AM
+#lsi() {
+#	cd ~/CODE/CPP/PROGRAMS/LSI || return
+#	g++ v1.cpp -o v1
+#	clear
+#	./v1
+#	rm v1 || return
+#	clear
+#	cd
+#}
 
 command_not_found_handle() {
 	printf 'NOT A COMMAND, NOT INSTALLED, OR NOT CONFIGURED.\n' >&2
