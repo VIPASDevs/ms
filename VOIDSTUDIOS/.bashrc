@@ -54,6 +54,6 @@ lsi() {
 }
 
 command_not_found_handle() {
-	printf 'That is either not a command, not installed, or not configured, dummy!\n' >&2
+	printf 'NOT A COMMAND, NOT INSTALLED, OR NOT CONFIGURED.\n' >&2
 	return 127
 }
