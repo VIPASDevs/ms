@@ -43,12 +43,12 @@ lsc() {
     cd
 }
 
-conv() {
-	cd CODE/JAVA/PROGRAMS/YEN-CON || return
- 	javac v3.java
- 	clear
-	java v3
- 	rm v3.class
+lsi() {
+	cd ~CODE/CPP/PROGRAMS/LSI || return
+	g++ v1.cpp -o v1
+	clear
+	./v1
+	rm v1 || return
 	clear
 	cd
 }
