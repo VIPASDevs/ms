@@ -27,21 +27,26 @@ alias rip-mp3='yt-dlp -x --audio-format mp3'
 alias bluetooth='blueman-manager'
 alias compile='nasm -f elf64'
 
-ldu() {
-    cd ~/CODE/PYTHON/PROGRAMS/LDU || return
-    sudo python3 ldu.py
-    cd
+tor-browser() {
+	cd ~/TOR/Browser || return
+	./start-tor-browser
 }
 
-lsc() {
-    cd ~/CODE/PASCAL/PROGRAMS/LSC || return
-    fpc v3.pas
-    clear
-    ./v3
-    rm v3.o v3 ad.o ad.ppu di.o di.ppu pow.o pow.ppu subs.o subs.ppu tim.o tim.ppu || return
-    clear
-    cd
-}
+#ldu() {
+#    cd ~/CODE/PYTHON/PROGRAMS/LDU || return
+#    sudo python3 ldu.py
+#    cd
+#}
+
+#lsc() {
+#    cd ~/CODE/PASCAL/PROGRAMS/LSC || return
+#    fpc v3.pas
+#    clear
+#    ./v3
+#    rm v3.o v3 ad.o ad.ppu di.o di.ppu pow.o pow.ppu subs.o subs.ppu tim.o tim.ppu || return
+#    clear
+#    cd
+#}
 
 #UNCOMMENT THE LSI FUNCTION IF NOT USING A BIN, I AM
 #lsi() {
